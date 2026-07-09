@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "Fira Code", monospace;
+  
+  --color-vibrant-bg: #FFFBEB;
+  --color-vibrant-primary: #4F46E5;
+  --color-vibrant-primary-light: #818CF8;
+  --color-vibrant-secondary: #F59E0B;
+  --color-vibrant-accent: #10B981;
+  --color-vibrant-text: #1F2937;
+}
+
+@layer base {
+  body {
+    @apply bg-vibrant-bg text-vibrant-text antialiased font-sans;
+  }
+}
+
+/* Custom styles for nice scrollbars and animations */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(79, 70, 229, 0.2);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(79, 70, 229, 0.4);
+}
+
+/* 3D shadow for vibrant elements */
+.vibrant-shadow-3d {
+  box-shadow: 0 8px 0 #D97706;
+}
+
+.vibrant-shadow-primary-3d {
+  box-shadow: 0 8px 0 #3730A3;
+}
+
